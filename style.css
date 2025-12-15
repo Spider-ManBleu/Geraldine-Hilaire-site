@@ -5,67 +5,93 @@ box-sizing: border-box;
 }
 
 body {
-background-color: #0b0b0b;
+background: radial-gradient(circle at top, #1a0000, #000);
 color: #f2f2f2;
 font-family: Arial, Helvetica, sans-serif;
 line-height: 1.6;
 }
 
-header {
-position: sticky;
-top: 0;
-background: #000;
-padding: 20px;
-border-bottom: 2px solid #400000;
-z-index: 10;
+/* ===== HEADER ARTISTIQUE ===== */
+
+.hero {
+text-align: center;
+padding: 60px 20px;
+background: linear-gradient(to bottom, #000, #120000);
+border-bottom: 2px solid #b30000;
 }
 
-h1 {
+.hero h1 {
 color: #b30000;
-text-align: center;
+font-size: 3rem;
+letter-spacing: 4px;
 margin-bottom: 10px;
-letter-spacing: 2px;
 }
+
+.subtitle {
+font-style: italic;
+opacity: 0.85;
+margin-bottom: 20px;
+}
+
+.contact p {
+margin: 5px 0;
+font-weight: bold;
+}
+
+/* ===== NAV ===== */
 
 nav {
+margin-top: 30px;
 display: flex;
 justify-content: center;
-gap: 20px;
+gap: 25px;
+flex-wrap: wrap;
 }
 
 nav a {
 color: #f2f2f2;
 text-decoration: none;
 font-weight: bold;
-transition: color 0.3s;
+padding-bottom: 3px;
+border-bottom: 2px solid transparent;
+transition: all 0.3s;
 }
 
 nav a:hover {
 color: #b30000;
+border-color: #b30000;
 }
+
+/* ===== SECTIONS ===== */
 
 section {
 padding: 80px 20px;
 max-width: 900px;
 margin: auto;
-border-bottom: 1px solid #222;
+text-align: center;
+border-bottom: 1px solid #220000;
 }
 
 h2 {
 color: #b30000;
-margin-bottom: 20px;
+margin-bottom: 30px;
 text-transform: uppercase;
+letter-spacing: 2px;
 }
+
+/* ===== IMAGES ===== */
 
 img {
 width: 100%;
-max-width: 700px;
+max-width: 650px;
 display: block;
 margin: 20px auto;
 border: 2px solid #400000;
+box-shadow: 0 0 20px rgba(179, 0, 0, 0.2);
 }
 
-/* effet simple au scroll */
+/* ===== ANIMATION ===== */
+
 section {
 animation: fadeIn 0.8s ease-in;
 }
@@ -73,10 +99,10 @@ animation: fadeIn 0.8s ease-in;
 @keyframes fadeIn {
 from {
 opacity: 0;
-transform: scale(0.97);
+transform: translateY(20px);
 }
 to {
 opacity: 1;
-transform: scale(1);
+transform: translateY(0);
 }
 }
