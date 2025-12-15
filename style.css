@@ -1,68 +1,82 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="UTF-8">
-<title>Géraldine Hilaire</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
-</head>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
 
-<body>
+body {
+background-color: #0b0b0b;
+color: #f2f2f2;
+font-family: Arial, Helvetica, sans-serif;
+line-height: 1.6;
+}
 
-<section class="section hero">
-<h1>Géraldine Hilaire</h1>
-<h2>Danseuse · Comédienne · Chorégraphe</h2>
-<p>
-Issue du Conservatoire de danse de Paris, Géraldine Hilaire développe un univers où
-se croisent théâtre, danse, chant et poésie.
-</p>
-</section>
+header {
+position: sticky;
+top: 0;
+background: #000;
+padding: 20px;
+border-bottom: 2px solid #400000;
+z-index: 10;
+}
 
-<section class="section reveal">
-<h3>Actrice</h3>
-<p>
-Géraldine Hilaire se forme au Conservatoire de danse de Paris, intègre les cours de
-Dominique Leverd et approfondit la tragédie et la comédie avec Philippe Ferran.
-Elle danse pour Angelin Preljocaj dans « Paysage après la bataille » ainsi que pour
-l’American Ballet dans « Le Corsaire ».
-Elle tourne pour des fictions et séries, notamment pour France 4 (« Au temps des Vikings »),
-et dans un long métrage de Cheyenne Caron.
-</p>
-</section>
+h1 {
+color: #b30000;
+text-align: center;
+margin-bottom: 10px;
+letter-spacing: 2px;
+}
 
-<section class="section reveal">
-<h3>Comédienne</h3>
-<p>
-Elle joue Molière dans « Les Fourberies de Scapin » et « L’Amour Médecin »,
-puis crée des spectacles mêlant danse et poésie.
-Elle interprète « Réconciliation » avec le pianiste Grégoire Linais,
-scénographie « Prélude à la nuit » autour de Chopin et Musset,
-et joue dans « Lunettes noires et vie en rose » ainsi que dans
-« Argan et ses femmes ».
-</p>
-</section>
+nav {
+display: flex;
+justify-content: center;
+gap: 20px;
+}
 
-<section class="section reveal">
-<h3>Art-thérapie & transmission</h3>
-<p>
-À la tête de sa troupe « Qui nous saisit nous surprend », Géraldine Hilaire enseigne
-et transmet le théâtre, le chant et la danse.
-Elle élabore une approche thérapeutique mêlant théâtre, clown, yoga du rire
-et expression corporelle.
-</p>
-</section>
+nav a {
+color: #f2f2f2;
+text-decoration: none;
+font-weight: bold;
+transition: color 0.3s;
+}
 
-<section class="section reveal">
-<h3>Créations & chorégraphies</h3>
-<p>
-Elle crée de nombreux spectacles de contes théâtralisés :
-« Le violon chante et le loup court », « Baba Yaga », « Perle de Lune »,
-et mène un travail de recherche autour des mythes et légendes.
-Elle collabore avec Sprezza World, Davide Napoli, Dominique Massa,
-et crée « Loriolet, l’épreuve du feu » pour le public familial.
-Un nouveau spectacle poétique et dansé, « Parfums », est en préparation.
-</p>
-</section>
+nav a:hover {
+color: #b30000;
+}
 
-</body>
-</html>
+section {
+padding: 80px 20px;
+max-width: 900px;
+margin: auto;
+border-bottom: 1px solid #222;
+}
+
+h2 {
+color: #b30000;
+margin-bottom: 20px;
+text-transform: uppercase;
+}
+
+img {
+width: 100%;
+max-width: 700px;
+display: block;
+margin: 20px auto;
+border: 2px solid #400000;
+}
+
+/* effet simple au scroll */
+section {
+animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+from {
+opacity: 0;
+transform: scale(0.97);
+}
+to {
+opacity: 1;
+transform: scale(1);
+}
+}
