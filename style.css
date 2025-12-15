@@ -1,50 +1,68 @@
-/* ----------- RESET ----------- */
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Géraldine Hilaire</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
 
-/* ----------- BODY ----------- */
-body {
-font-family: Arial, Helvetica, sans-serif;
-background: #f2f2f2;
-color: #333;
-line-height: 1.6;
-padding: 20px;
-}
+<body>
 
-/* ----------- HEADER ----------- */
-header {
-background: #222;
-color: #fff;
-padding: 20px;
-margin-bottom: 20px;
-border-radius: 8px;
-}
+<section class="section hero">
+<h1>Géraldine Hilaire</h1>
+<h2>Danseuse · Comédienne · Chorégraphe</h2>
+<p>
+Issue du Conservatoire de danse de Paris, Géraldine Hilaire développe un univers où
+se croisent théâtre, danse, chant et poésie.
+</p>
+</section>
 
-header h1 {
-font-size: 28px;
-}
+<section class="section reveal">
+<h3>Actrice</h3>
+<p>
+Géraldine Hilaire se forme au Conservatoire de danse de Paris, intègre les cours de
+Dominique Leverd et approfondit la tragédie et la comédie avec Philippe Ferran.
+Elle danse pour Angelin Preljocaj dans « Paysage après la bataille » ainsi que pour
+l’American Ballet dans « Le Corsaire ».
+Elle tourne pour des fictions et séries, notamment pour France 4 (« Au temps des Vikings »),
+et dans un long métrage de Cheyenne Caron.
+</p>
+</section>
 
-/* ----------- CONTACT SECTION ----------- */
-.contact-info {
-background: white;
-padding: 20px;
-border-radius: 8px;
-max-width: 500px;
-border: 1px solid #ddd;
-}
+<section class="section reveal">
+<h3>Comédienne</h3>
+<p>
+Elle joue Molière dans « Les Fourberies de Scapin » et « L’Amour Médecin »,
+puis crée des spectacles mêlant danse et poésie.
+Elle interprète « Réconciliation » avec le pianiste Grégoire Linais,
+scénographie « Prélude à la nuit » autour de Chopin et Musset,
+et joue dans « Lunettes noires et vie en rose » ainsi que dans
+« Argan et ses femmes ».
+</p>
+</section>
 
-.contact-info p {
-font-size: 18px;
-margin-bottom: 10px;
-}
+<section class="section reveal">
+<h3>Art-thérapie & transmission</h3>
+<p>
+À la tête de sa troupe « Qui nous saisit nous surprend », Géraldine Hilaire enseigne
+et transmet le théâtre, le chant et la danse.
+Elle élabore une approche thérapeutique mêlant théâtre, clown, yoga du rire
+et expression corporelle.
+</p>
+</section>
 
-/* ----------- FOOTER ----------- */
-footer {
-margin-top: 40px;
-text-align: center;
-font-size: 14px;
-color: #777;
-}
+<section class="section reveal">
+<h3>Créations & chorégraphies</h3>
+<p>
+Elle crée de nombreux spectacles de contes théâtralisés :
+« Le violon chante et le loup court », « Baba Yaga », « Perle de Lune »,
+et mène un travail de recherche autour des mythes et légendes.
+Elle collabore avec Sprezza World, Davide Napoli, Dominique Massa,
+et crée « Loriolet, l’épreuve du feu » pour le public familial.
+Un nouveau spectacle poétique et dansé, « Parfums », est en préparation.
+</p>
+</section>
+
+</body>
+</html>
